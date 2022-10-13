@@ -54,6 +54,7 @@ class CfgWeapons {
   /*extern*/ class ItemCore;
   /*extern*/ class UniformItem;
   /*extern*/ class H_Beret_02;
+  /*extern*/ class rhs_altyn;
   class Uniform_Base: ItemCore {
     class ItemInfo;
   };
@@ -66,6 +67,13 @@ class CfgWeapons {
     _generalMacro = "HD_Beret";
     displayName = "[Helldivers Armoury] Beret";
     hiddenSelectionsTextures[] = {"\HS_HELL_Helm\Data\beret.paa"};
+  };
+
+  class HS_HELL_Altyn: rhs_altyn {
+    author = "Helix Studios";
+    _generalMacro = "HD_Altyn";
+    displayName = "[Helldivers Armoury] Altyn";
+    hiddenSelectionsTextures[] = {"\HS_HELL_Helm\Data\Altyn.paa"};
   };
 
 };

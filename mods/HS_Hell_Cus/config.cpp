@@ -63,7 +63,7 @@ class CfgWeapons {
   };
 
   /// Helmets
-  class HS_HELL_Altyn: rhs_altyn {
+  class HS_HELL_Cus_Altyn: rhs_altyn {
     author = "Helix Studios";
     displayName = "[Helldivers Customs] Altyn";
     hiddenSelectionsTextures[] = {"\HS_HELL_Cus\Data\Helmets\altyn.paa"};

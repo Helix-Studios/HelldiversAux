@@ -70,24 +70,180 @@ class CfgWeapons {
     _generalMacro = "HS_H_V_PC_OP_Blk";
     displayName = "[Helldivers Armoury] Platecarrier Black (Operator)";
     hiddenSelectionsTextures[] = {"\HS_Hell_Vests\Data\HD_V_B", "\HS_Hell_Vests\Data\HD_V_acc_B"};
+
+    class ItemInfo: VestItem {
+      uniformModel="\mas_cia_jsog\vest\mas_plate_carrier_LR";
+      containerClass = "Supply250";
+      mass = 20;
+      hiddenSelections[]={"camo", "Camo1"};
+
+      class HitpointsProtectionInfo {
+        class Chest {
+          hitpointName="HitChest";
+          armor=40;
+          passThrough=0.3;
+        };
+        class Arms {
+          hitpointName="HitArms";
+          armor=25;
+          passThrough=0.5;
+        };
+        class Neck {
+          hitpointName="HitNeck";
+          armor=40;
+          passThrough=0.2;
+        };
+        class Diaphragm {
+          hitpointName="HitDiaphragm";
+          armor=40;
+          passThrough=0.1;
+        };
+        class Abdomen {
+          hitpointName="HitAbdomen";
+          armor=30;
+          passThrough=0.1;
+        };
+        class Body {
+          hitpointName="HitBody";
+          passThrough=0.1;
+        };
+      };
+    };
   };
   class HS_HELL_V_Platecarrier_AR_Blk: V_mas_cia_PlateCarrierAR_rgr {
     author = "Helix Studios + Massi";
     _generalMacro = "HS_H_V_PC_AR_Blk";
     displayName = "[Helldivers Armoury] Platecarrier Black (Heavy)";
     hiddenSelectionsTextures[] = {"\HS_Hell_Vests\Data\HD_V_B", "\HS_Hell_Vests\Data\HD_V_acc_B"};
+
+    class ItemInfo: VestItem {
+      uniformModel="\mas_cia_jsog\vest\mas_plate_carrier_AR";
+      containerClass = "Supply250";
+      mass = 20;
+      hiddenSelections[]={"camo", "Camo1"};
+
+      class HitpointsProtectionInfo {
+        class Chest {
+          hitpointName="HitChest";
+          armor=40;
+          passThrough=0.3;
+        };
+        class Arms {
+          hitpointName="HitArms";
+          armor=25;
+          passThrough=0.5;
+        };
+        class Neck {
+          hitpointName="HitNeck";
+          armor=40;
+          passThrough=0.2;
+        };
+        class Diaphragm {
+          hitpointName="HitDiaphragm";
+          armor=40;
+          passThrough=0.1;
+        };
+        class Abdomen {
+          hitpointName="HitAbdomen";
+          armor=30;
+          passThrough=0.1;
+        };
+        class Body {
+          hitpointName="HitBody";
+          passThrough=0.1;
+        };
+      };
+    };
   };
   class HS_HELL_V_Platecarrier_GL_Blk: V_mas_cia_PlateCarrier1_rgr {
     author = "Helix Studios + Massi";
     _generalMacro = "HS_H_V_PC_GL_Blk";
     displayName = "[Helldivers Armoury] Platecarrier Black (Grenadier)";
     hiddenSelectionsTextures[] = {"\HS_Hell_Vests\Data\HD_V_B", "\HS_Hell_Vests\Data\HD_V_acc_B"};
+
+    class ItemInfo: VestItem {
+      uniformModel="\mas_cia_jsog\vest\mas_plate_carrier_OP";
+      containerClass = "Supply250";
+      mass = 20;
+      hiddenSelections[]={"camo", "Camo1"};
+
+      class HitpointsProtectionInfo {
+        class Chest {
+          hitpointName="HitChest";
+          armor=40;
+          passThrough=0.3;
+        };
+        class Arms {
+          hitpointName="HitArms";
+          armor=25;
+          passThrough=0.5;
+        };
+        class Neck {
+          hitpointName="HitNeck";
+          armor=40;
+          passThrough=0.2;
+        };
+        class Diaphragm {
+          hitpointName="HitDiaphragm";
+          armor=40;
+          passThrough=0.1;
+        };
+        class Abdomen {
+          hitpointName="HitAbdomen";
+          armor=30;
+          passThrough=0.1;
+        };
+        class Body {
+          hitpointName="HitBody";
+          passThrough=0.1;
+        };
+      };
+    };
   };
   class HS_HELL_V_Platecarrier_RF_Blk: V_mas_cia_PlateCarrierRF_rgr {
     author = "Helix Studios + Massi";
     _generalMacro = "HS_H_V_PC_RF_Blk";
     displayName = "[Helldivers Armoury] Platecarrier Black (Recon)";
     hiddenSelectionsTextures[] = {"\HS_Hell_Vests\Data\HD_V_B", "\HS_Hell_Vests\Data\HD_V_acc_B"};
+
+    class ItemInfo: VestItem {
+      uniformModel="\mas_cia_jsog\vest\mas_plate_carrier_RF";
+      containerClass = "Supply250";
+      mass = 20;
+      hiddenSelections[]={"camo", "Camo1"};
+
+      class HitpointsProtectionInfo {
+        class Chest {
+          hitpointName="HitChest";
+          armor=40;
+          passThrough=0.3;
+        };
+        class Arms {
+          hitpointName="HitArms";
+          armor=25;
+          passThrough=0.5;
+        };
+        class Neck {
+          hitpointName="HitNeck";
+          armor=40;
+          passThrough=0.2;
+        };
+        class Diaphragm {
+          hitpointName="HitDiaphragm";
+          armor=40;
+          passThrough=0.1;
+        };
+        class Abdomen {
+          hitpointName="HitAbdomen";
+          armor=30;
+          passThrough=0.1;
+        };
+        class Body {
+          hitpointName="HitBody";
+          passThrough=0.1;
+        };
+      };
+    };
   };
 
   class HS_HELL_V_Platecarrier_OP_Coy: HS_HELL_V_Platecarrier_OP_Blk {
