@@ -1,10 +1,12 @@
 class CfgPatches {
     class HS_HELL_Customs {
+        author = "Helix Studios";
         units[] = {};
         weapons[] = {};
         requiredVersion = 0.1;
         requiredAddons[] = {
-            "A3_Characters_F", 
+            "A3_Characters_F",
+            "A3_Data_F", 
             "rhsusf_main",
             "rhs_infantry2",
             "rhsusf_c_weapons",
@@ -51,10 +53,15 @@ class UniformSlotInfo {
 }; 
 
 class CfgWeapons {
+  /*extern*/ class ItemInfo;
   /*extern*/ class ItemCore;
+  /*extern*/ class HeadgearItem;
   /*extern*/ class UniformItem;
+  /*extern*/ class UniformInfo;
+
   /*extern*/ class H_Beret_02;
   /*extern*/ class rhs_altyn;
+
   class Uniform_Base: ItemCore {
     class ItemInfo;
   };
@@ -69,7 +76,30 @@ class CfgWeapons {
     hiddenSelectionsTextures[] = {"\HS_HELL_Cus\Data\Helmets\altyn.paa"};
   };
 
+  class HS_Hell_Cus_Dunce: ItemCore {
+    scope = 2;
+    displayName = "[Helldivers Customs] Ardys Duncecap";
+    picture = "\HS_HELL_Cus\Data\Helmets\dunce_logo.jpg";
+    model = "\HS_HELL_Cus\Data\dunce";
+    HiddenSelections[] = ["camo"]
+    HiddenSelectionsTexture[] = ["\HS_HELL_Cus\Data\Helmets\Dunce_co.paa"]
+    class ItemInfo: HeadgearItem {
+      mass = 4;
+      uniformModel = "\HS_HELL_Cus\Data\dunce";
+      allowedSlots[] = {801,901,701,605};
+			modelSides[] = {6};
+			hiddenSelections[] = {"camo"};
+			subItems[] = {"Integrated_NVG_F"};
+      class HitpointsProtectionInfo {
+        class Head {
+          hitpointName = "HitHead";
+          armor = 12;
+          passThrough = 0.5;
+        };
+      };
+    };
+  };
 
-  // Vests
-  // Uniforms
+  /// Vests
+  /// Uniforms
 };
