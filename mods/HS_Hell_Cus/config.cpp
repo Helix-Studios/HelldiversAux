@@ -81,8 +81,8 @@ class CfgWeapons {
     displayName = "[Helldivers Customs] Ardys Duncecap";
     picture = "\HS_HELL_Cus\Data\Helmets\dunce_logo.jpg";
     model = "\HS_HELL_Cus\Data\dunce";
-    HiddenSelections[] = ["camo"]
-    HiddenSelectionsTexture[] = ["\HS_HELL_Cus\Data\Helmets\Dunce_co.paa"]
+    HiddenSelections[] = {"camo"};
+    HiddenSelectionsTexture[] = {"\HS_HELL_Cus\Data\Helmets\Dunce_co.paa"};
     class ItemInfo: HeadgearItem {
       mass = 4;
       uniformModel = "\HS_HELL_Cus\Data\dunce";
